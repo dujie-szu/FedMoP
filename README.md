@@ -4,15 +4,41 @@ This is the PyTorch implementation of our paper **"Federated Learning using Mode
 
 The experimental  results (test accuracy %) on HAM10K dataset.
 
-|  Methods | Two-client | Four-client  |
-|---|---|---|
-|  Centralized learning | 68.94±0.06  | 68.94±0.06  |
-|  FedAvg(AISat-2017) |  65.43±0.29 | 59.22±0.77  |
-|  FedProx(PMLS-2020) |  66.25±0.29 | 59.22±0.29  |
-|  SCAFFOLD(ICML-2020) | 67.08±1.34  | 64.39±0.29  |
-| FedaGrac(TPDS-2023)  | 67.70±0.88  |  64.18±0.59 |
-|  FedReg(ICLR-2022) | 66.67±1.05  |  65.84±0.05 |
-|  Our FedMoP | 69.36±0.30 (↑1.66) | 69.57±0.51 (↑3.73)  |
+<table>
+    <tr>
+        <th colspan="2">Methods</th><th>Two-client</th><th>Four-client </th>
+    </tr>
+  <tr>
+    <td colspan="2">Centralized learning</td><td colspan="2" align="center">68.94±0.06</td>
+  </tr>
+    <tr>
+        <td rowspan="6">Federated learning </td><td>FedAvg(AISat-2017)</td><td >65.43±0.29 </td><td>59.22±0.77</td>
+    </tr>
+    <tr>
+        <td>FedProx(PMLS-2020)</td></td><td>66.25±0.29</td><td>59.22±0.29</td>
+    </tr>
+    <tr>
+        <td>SCAFFOLD(ICML-2020)</td></td><td>67.08±1.34</td><td>64.39±0.29</td>
+    </tr>
+    <tr>
+        <td>FedaGrac(TPDS-2023)</td></td><td>67.70±0.88</td><td>64.18±0.59</td>
+    </tr>
+    <tr>
+        <td>FedReg(ICLR-2022)</td></td><td>66.67±1.05</td><td>65.84±0.05</td>
+    </tr>
+    <tr>
+        <td>Our FedMoP</td></td><td><b>69.36±0.30</b> (↑ 1.66)</td><td><b>69.57±0.51</b> (↑ 3.73)</td>
+    </tr>
+   
+</table>
+
+作者：图南
+链接：https://www.zhihu.com/question/50267650/answer/1584380105
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+
+
 
 ## Usage
 
