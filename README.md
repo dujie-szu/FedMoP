@@ -1,6 +1,10 @@
-# FedMoP: Federated Learning using Model Projection for Multi‑Center Disease Diagnosis with Non-IID data
+# FedMoP: Federated Learning using Model Projection for Multi‑Center Disease Diagnosis with Non-IID data (Under review)
 
 This is the PyTorch implementation of our paper **"Federated Learning using Model Projection for Multi-Center Disease Diagnosis with Non-IID Data"** . 
+
+The experimental  results on HAM10K dataset.
+
+![HAM10K results](./HAM10kresults.png)
 
 
 ## Usage
