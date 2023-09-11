@@ -2,10 +2,17 @@
 
 This is the PyTorch implementation of our paper **"Federated Learning using Model Projection for Multi-Center Disease Diagnosis with Non-IID Data"** . 
 
-The experimental  results on HAM10K dataset.
+The experimental  results (test accuracy %) on HAM10K dataset.
 
-![HAM10K results](./HAM10kresults.png)
-
+|  Methods | Two-client | Four-client  |
+|---|---|---|
+|  Centralized learning | 68.94±0.06  | 68.94±0.06  |
+|  FedAvg(AISat-2017) |  65.43±0.29 | 59.22±0.77  |
+|  FedProx(PMLS-2020) |  66.25±0.29 | 59.22±0.29  |
+|  SCAFFOLD(ICML-2020) | 67.08±1.34  | 64.39±0.29  |
+| FedaGrac(TPDS-2023)  | 67.70±0.88  |  64.18±0.59 |
+|  FedReg(ICLR-2022) | 66.67±1.05  |  65.84±0.05 |
+|  Our FedMoP | 69.36±0.30 (↑1.66) | 69.57±0.51 (↑3.73)  |
 
 ## Usage
 
