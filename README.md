@@ -1,6 +1,6 @@
 # FedMoP: Federated Learning using Model Projection for Multi‑Center Disease Diagnosis with Non-IID data (Under review)
 
-This is the PyTorch implementation of our paper **"Federated Learning using Model Projection for Multi-Center Disease Diagnosis with Non-IID Data"** . 
+This is the PyTorch implementation of our paper **"Jie Du, Wei Li, Peng Liu, et al. Federated Learning using Model Projection for Multi-Center Disease Diagnosis with Non-IID Data"** . 
 
 The experimental  results (test accuracy %) on HAM10K dataset.
 
@@ -32,7 +32,38 @@ The experimental  results (test accuracy %) on HAM10K dataset.
    
 </table>
 
+The experimental results (test accuracy %) on COVID-19 and PBC dataset.
 
+<table>
+        <tr>
+            <th colspan="2" rowspan="2">Methods</th><th colspan="2">Non-uniform</th><th colspan="2">One-class </th>
+        </tr>
+        <tr>
+            <td>COVID-19</td><td align="center">PBC</td><td>COVID-19</td><td align="center">PBC</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">Centralized learning</td><td colspan="1">68.60±0.05</td><td colspan="1">97.45±0.03</td><td colspan="1">68.60±0.05</td><td colspan="1">97.45±0.03</td>
+        </tr>
+            <tr>
+                <td rowspan="6">Federated learning </td><td>FedAvg(AISat-2017)</td><td >66.31±0.24</td><td>96.74±0.06</td><td>67.05±0.16</td><td>87.22±0.29</td>
+            </tr>
+            <tr>
+                <td>FedProx(PMLS-2020)</td></td><td>66.41±0.32</td><td>96.78±0.10</td><td>66.89±0.32</td><td>87.88±0.15</td>
+            </tr>
+            <tr>
+                <td>SCAFFOLD(ICML-2020)</td></td><td>68.44±0.12</td><td>96.83±0.02</td><td>66.76±0.65</td><td>69.79±0.51</td>
+            </tr>
+            <tr>
+                <td>FedaGrac(TPDS-2023)</td></td><td>68.60±0.49</td><td>96.98±0.05</td><td>68.18±0.25</td><td>88.80±0.16</td>
+            </tr>
+            <tr>
+                <td>FedReg(ICLR-2022)</td></td><td>68.09±1.22</td><td>96.81±0.04</td><td>69.66±0.62</td><td>91.93±0.36</td>
+            </tr>
+            <tr>
+                <td>Our FedMoP</td></td><td><b><b>70.30±0.30</b> (↑1.70)</td><td><b>97.48±0.08</b> (↑0.50)</td><td><b>70.88±0.40</b> (↑1.22)</td><td><b>97.24±0.07</b> (↑5.31)</td>
+            </tr>
+    
+</table>
 
 
 
